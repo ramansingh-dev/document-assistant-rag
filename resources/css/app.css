@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: ui-sans-serif, system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Dark mode follows the OS setting. */
+@custom-variant dark (@media (prefers-color-scheme: dark));
+
+.answer-text {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+[x-cloak] {
+    display: none !important;
+}
